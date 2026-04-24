@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- 📱 Wichtig für Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Paros Countdown</title>
+
+  <!-- PWA (Android Chrome nutzt DAS hier) -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e90ff">
+
+  <!-- Optional Android Optimierung -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Splash -->
+  <div id="splash">
+    <h1>🇬🇷 Greece loading…</h1>
+  </div>
+
+  <!-- Szene -->
+  <div class="scene">
+
+    <!-- Hintergrund -->
+    <div class="sky"></div>
+    <div class="sand"></div>
+    <div class="wet-sand"></div>
+
+    <div class="sea">
+      <div class="seafoam"></div>
+    </div>
+
+    <div class="leaves">
+      <div class="leaves-1"></div>
+      <div class="leaves-2"></div>
+      <div class="leaves-3"></div>
+    </div>
+
+    <div class="sand-front"></div>
+    <div class="sun"></div>
+
+    <!-- 🔥 FLEXBOX APP -->
+    <div class="app">
+      <h1>🏝️ Paros wir kommen!</h1>
+      <div id="countdown"></div>
+    </div>
+
+    <canvas id="fireworks"></canvas>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
